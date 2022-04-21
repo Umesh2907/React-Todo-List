@@ -1,0 +1,12 @@
+.complete {
+  text-decoration: line-through;
+  color: red;
+}
+.App {
+  font-family: sans-serif;
+  margin: 10px;
+}
+.todo-row {
+  display: flex;
+  padding: 10px;
+}
