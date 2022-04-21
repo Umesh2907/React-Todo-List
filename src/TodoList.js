@@ -4,9 +4,9 @@ import Todo from "./Todo";
 
 function TodoList({ onClick }) {
   const [todos, setTodos] = useState([]);
-  //Track is edit clicked or not
+
   const [editId, setEdit] = useState(false);
-  //Save input value in input box
+  
   const [inputValue, setInputValue] = useState("");
 
   const handleEditChange = (id, text) => {
@@ -21,7 +21,7 @@ function TodoList({ onClick }) {
     const newTodos = [todo, ...todos];
 
     setTodos(newTodos);
-    // console.log(newTodos);
+
   };
 
   const removeTodo = (id) => {
@@ -54,7 +54,6 @@ function TodoList({ onClick }) {
   return (
     <>
       <TodoForm onSubmit={addTodo} />
-      {/* I want to move this code below into a new component called Todo.js */}
       <Todo
         todos={todos}
         completeTodo={completeTodo}
